@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/*Reinicio cajas y margenes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1a181860;
+    color: #fff;
+}
+
+.body-historia,
+.body-personajes, 
+.body-naves, 
+.body-planetas,
+.body-comunidad{
+    background-image: url("../media/img/star-wars-logo-3654.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+    align-items: center;
+}
+
+/*inicio estilos index.html*/
+
+.body-index {
+    background-image: url("/media/img/hyperspace-byStarWars.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: gray;
+    border-color: #413f3f;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: 1.7rem;
+    color: white;
+    background: #ffcc00;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/*fin estilos index.html*/
+
+/*Titulo principal*/
+
+.barra-navegacion header {
+    background: rgb(112, 108, 100);
+    background: linear-gradient(177deg, rgba(112, 108, 100, 1) 0%, rgba(5, 5, 5, 1) 73%);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.barra-navegacion header h1 {
+    padding-top: 15px;
+    font-size: 50px;
+}
+
+/*Barra de menu estilos*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #222;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Barra de menu fija */
+
+.barra-navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(112, 112, 112, 0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Inicio estilos historia.php*/
+
+section {
+    margin-top: 10px;
+    padding: 30px 20px;
+    background: rgba(38, 39, 20, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.section-spacing {
+    margin-top: 40px;
+}
+
+section h2 {
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 2px rgba(65, 231, 65, 0.9);
+}
+
+section h3 {
+    text-align: left;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 2px rgba(65, 231, 65, 0.9);
+    margin-bottom: 10px;
+}
+
+section h4 {
+    text-align: left;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 2px rgba(9, 131, 9, 0.9);
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 10px;
+}
+
+section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+    margin-top: 4%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/*Fin de estilos historia.php*/
+
+/*Inicio de estilos personajes.html*/
+
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.personaje {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.personaje:hover {
+    transform: scale(1.05);
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.personaje h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.personaje p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/*Fin de estilos personajes.html*/
+
+/*Inicio de estilos naves.html*/
+
+.titulo-naves{
+    margin-top: 88px;
+}
+
+.titulo-naves h2{
+    margin: 15px;    
+    font-size: 2.9rem;
+}
+
+.naves {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: 40px;    
+}
+
+.naves img{
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para cada Nave */
+.nave {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover */
+.nave:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Imagen de la Nave */
+.nave img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Detalles de la Nave */
+.nave p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.nave ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+.nave ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.nave .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nave .btn:hover {
+    background-color: #e67e22;
+}
+
+/*Fin de estilos naves.html*/
+
+/*Inicio de estilos planetas.html*/
+
+.planetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.planetas img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para cada Planeta */
+.planeta {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover */
+.planeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Imagen del Planeta */
+.planeta img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Detalles del Planeta */
+.planeta p {
+    font-size: 1rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.planeta ul {
+    list-style-type: none;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+.planeta ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.planeta .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.planeta .btn:hover {
+    background-color: #e67e22;
+}
+
+/*Fin de estilos planetas.html*/
+
+/*Inicio de estilos comunidad.html*/
+.comunidad {
+    margin-top: 40px;
+    padding: 30px 20px;
+    background: rgba(38, 39, 20, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+.formulario-comunidad {    
+    margin: 0 auto;
+    background-color: #1a1b1b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-comunidad .campo {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas del formulario */
+.formulario-comunidad label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #f39c12;
+}
+
+/* Estilos para los campos de texto */
+.formulario-comunidad input[type="text"],
+.formulario-comunidad input[type="email"],
+.formulario-comunidad input[type="date"],
+.formulario-comunidad select,
+.formulario-comunidad textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #7f8c8d;
+    border-radius: 5px;
+    background-color: #4f5052;
+    color: #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de envío */
+.formulario-comunidad .btn-send {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Efecto hover del botón */
+.formulario-comunidad button:hover {
+    background-color: #e67e22;
+}
+
+/*Fin de estilos comunidad.html*/
+
+/* Pie de página */
+
+footer {
+    background: rgb(112, 108, 100);
+    background: linear-gradient(16deg, rgba(112, 108, 100, 0.8) 0%, rgba(5, 5, 5, 1) 73%);
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    clear: both;
+}
+
+footer .redes {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+footer .redes h4 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer .redes-logo {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+footer .redes-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease;
+}
+
+footer .redes-logo a:hover {
+    transform: scale(1.1);
+}
+
+footer .redes-logo img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+footer img {
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 576px) {
+    body {
+        background-color: #1a181860;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 10px;
+    }
+
+    section {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #1a181860;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 10px;
+    }
+
+    section {
+        width: 80%;
+        margin: auto;
+        column-count: 3;
+        column-gap: 12px;
+        column-rule: 2px solid #413f3f;
+    }
+} 
+
+@media (min-width: 992px) {
+    body {
+        background-color: #1a181860;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 10px;
+    }
+
+    section {
+        width: 60%;
+        margin: auto;        
+        column-gap: 12px;
+        column-rule: 2px solid #413f3f;
+    }
+}
